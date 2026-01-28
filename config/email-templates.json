@@ -1,0 +1,47 @@
+{
+  "onboarding": {
+    "welcome": {
+      "subject": "Welcome to {{companyName}} - Your First Day Information",
+      "body": "Dear {{firstName}},\n\nWelcome to {{companyName}}! We're excited to have you join our team as {{title}} in the {{department}} department.\n\nYour first day is {{startDate}}, and we've prepared everything you need to get started:\n\n**What to expect on your first day:**\n- Arrival time: {{arrivalTime}}\n- Location: {{officeAddress}}\n- Your manager: {{managerName}} ({{managerEmail}})\n- IT setup will be completed by our team\n\n**Your accounts and access:**\n- Email: {{email}}\n- Username: {{username}}\n- Temporary password will be provided on your first day\n\n**Important first-day items to bring:**\n- Valid photo ID\n- Completed tax and employment forms (if not already submitted)\n- Banking information for direct deposit\n\nIf you have any questions before your start date, please don't hesitate to reach out to HR at {{hrEmail}} or your manager {{managerName}}.\n\nWe look forward to seeing you on {{startDate}}!\n\nBest regards,\n{{companyName}} Team"
+    },
+    "managerNotification": {
+      "subject": "New Team Member: {{firstName}} {{lastName}} - Starting {{startDate}}",
+      "body": "Hi {{managerFirstName}},\n\nThis is a confirmation that {{firstName}} {{lastName}} is scheduled to start as {{title}} on {{startDate}}.\n\n**New Hire Details:**\n- Name: {{firstName}} {{lastName}}\n- Position: {{title}}\n- Department: {{department}}\n- Start Date: {{startDate}}\n- Email: {{email}}\n\n**IT Setup Status:**\n- Workstation: {{workstationStatus}}\n- Accounts: {{accountStatus}}\n- Equipment: {{equipmentStatus}}\n\n**Action Items for You:**\n- Schedule first-day orientation meeting\n- Prepare workspace and introduce to team\n- Review first week training schedule\n- Assign initial projects/tasks\n\nThe IT department has created the onboarding ticket #{{ticketNumber}} to track all setup tasks. You can view the progress in Autotask.\n\nIf you need any additional setup or have special requirements, please reply to this email or contact IT at {{itEmail}}.\n\nBest regards,\nIT Automation System"
+    },
+    "hrNotification": {
+      "subject": "IT Onboarding Complete: {{firstName}} {{lastName}}",
+      "body": "Hi HR Team,\n\nThe IT onboarding process has been completed for:\n\n**Employee Information:**\n- Name: {{firstName}} {{lastName}}\n- Position: {{title}}\n- Department: {{department}}\n- Start Date: {{startDate}}\n- Manager: {{managerName}}\n\n**Completed Tasks:**\n- ✅ User account created\n- ✅ Email configured\n- ✅ Workstation prepared\n- ✅ Software installed\n- ✅ Network access provisioned\n- ✅ Security training scheduled\n\n**Account Credentials:**\n- Email: {{email}}\n- Username: {{username}}\n- Initial password: [Provided separately via secure method]\n\n**Autotask Ticket:** #{{ticketNumber}}\n\nThe employee is ready to start on their scheduled date. If there are any questions or additional setup needs, please let us know.\n\nBest regards,\nIT Automation System"
+    }
+  },
+  "offboarding": {
+    "managerNotification": {
+      "subject": "Employee Exit Process Started: {{firstName}} {{lastName}}",
+      "body": "Hi {{managerFirstName}},\n\nThis notification confirms that the offboarding process has been initiated for {{firstName}} {{lastName}}.\n\n**Departing Employee Details:**\n- Name: {{firstName}} {{lastName}}\n- Position: {{title}}\n- Department: {{department}}\n- Last Working Day: {{lastDay}}\n- Reason: {{reason}}\n\n**Important Manager Tasks:**\n- Conduct exit interview (if applicable)\n- Review and approve final time entries in Autotask\n- Transfer active projects and responsibilities\n- Document critical knowledge\n- Collect all company equipment\n- Complete manager's portion of exit checklist\n\n**IT Offboarding Timeline:**\n- Account access will be disabled at EOD on {{lastDay}}\n- Email will be {{emailAction}} for {{emailRetention}} days\n- Company data will be backed up before account closure\n\n**Autotask Ticket:** #{{ticketNumber}}\n\nPlease coordinate with IT if you need:\n- Extended access for knowledge transfer\n- Email forwarding to specific team members\n- Access to specific files or projects after departure\n\nFor questions about the offboarding process, contact HR at {{hrEmail}} or IT at {{itEmail}}.\n\nBest regards,\nIT Automation System"
+    },
+    "hrNotification": {
+      "subject": "IT Offboarding Complete: {{firstName}} {{lastName}}",
+      "body": "Hi HR Team,\n\nThe IT offboarding process has been completed for:\n\n**Former Employee Information:**\n- Name: {{firstName}} {{lastName}}\n- Position: {{title}}\n- Department: {{department}}\n- Last Working Day: {{lastDay}}\n- Manager: {{managerName}}\n\n**Completed Tasks:**\n- ✅ User account disabled\n- ✅ Email access revoked\n- ✅ VPN access removed\n- ✅ Application access revoked\n- ✅ Equipment collected and processed\n- ✅ Data backed up and archived\n- ✅ Building access disabled\n\n**Data Retention:**\n- Email: {{emailRetention}}\n- Files: {{fileRetention}}\n- Backup Location: {{backupLocation}}\n\n**Equipment Status:**\n{{equipmentList}}\n\n**Outstanding Items:**\n{{outstandingItems}}\n\n**Autotask Ticket:** #{{ticketNumber}}\n**Completion Date:** {{completionDate}}\n\nIf you need access to archived data or have questions about the offboarding, please contact IT.\n\nBest regards,\nIT Automation System"
+    },
+    "itTeamNotification": {
+      "subject": "Offboarding Required: {{firstName}} {{lastName}} - Last Day {{lastDay}}",
+      "body": "Hi IT Team,\n\nAn offboarding request has been created:\n\n**Employee Information:**\n- Name: {{firstName}} {{lastName}}\n- Position: {{title}}\n- Email: {{email}}\n- Last Working Day: {{lastDay}}\n- Manager: {{managerName}}\n\n**Assigned Tasks:**\n{{assignedTasks}}\n\n**Priority:** {{priority}}\n**Due Date:** {{dueDate}}\n**Autotask Ticket:** #{{ticketNumber}}\n\n**Equipment to Collect:**\n{{equipmentList}}\n\n**Access to Revoke:**\n{{accessList}}\n\nPlease coordinate with the employee's manager for equipment collection and any knowledge transfer needs.\n\nView full details and update status in Autotask: {{ticketUrl}}\n\nBest regards,\nIT Automation System"
+    },
+    "securityNotification": {
+      "subject": "Security Alert: Employee Departure - {{firstName}} {{lastName}}",
+      "body": "Security Team,\n\nPlease be advised of the following employee departure requiring security review:\n\n**Employee Information:**\n- Name: {{firstName}} {{lastName}}\n- Position: {{title}}\n- Department: {{department}}\n- Last Working Day: {{lastDay}}\n- Separation Type: {{separationType}}\n\n**Security Actions Required:**\n- Review access logs for unusual activity\n- Verify all privileged access has been revoked\n- Confirm encryption keys have been transferred/revoked\n- Review shared credentials and update as needed\n- Audit file downloads in final days\n\n**High-Risk Indicators:**\n{{riskIndicators}}\n\n**Access Level:** {{accessLevel}}\n**Autotask Ticket:** #{{ticketNumber}}\n\nPlease coordinate with IT regarding any security concerns.\n\nBest regards,\nIT Automation System"
+    }
+  },
+  "errors": {
+    "workflowFailure": {
+      "subject": "Workflow Execution Failed: {{workflowName}}",
+      "body": "An error occurred in the automated workflow:\n\n**Workflow:** {{workflowName}}\n**Execution ID:** {{executionId}}\n**Timestamp:** {{timestamp}}\n**Error Type:** {{errorType}}\n\n**Error Details:**\n{{errorMessage}}\n\n**Input Data:**\n{{inputData}}\n\n**Stack Trace:**\n{{stackTrace}}\n\n**Action Required:**\n- Review error details in n8n console\n- Check Autotask API connectivity\n- Verify credential validity\n- Manual intervention may be required\n\nView execution details: {{executionUrl}}\n\nThis is an automated notification from the n8n workflow system."
+    },
+    "apiError": {
+      "subject": "Autotask API Error: {{operation}}",
+      "body": "An error occurred while communicating with Autotask API:\n\n**Operation:** {{operation}}\n**Endpoint:** {{endpoint}}\n**HTTP Status:** {{statusCode}}\n**Error Message:** {{errorMessage}}\n\n**Request Details:**\n{{requestDetails}}\n\n**Suggested Actions:**\n- Verify Autotask API credentials\n- Check API rate limits\n- Review Autotask service status\n- Validate request payload format\n\n**Timestamp:** {{timestamp}}\n**Workflow:** {{workflowName}}\n\nThis may require manual completion of the task in Autotask.\n\nThis is an automated notification from the n8n workflow system."
+    }
+  },
+  "general": {
+    "signature": "\n\n---\nThis is an automated message from the IT Automation System.\nFor questions or issues, contact IT Support at {{itEmail}}.\n\nAutotask Ticket: #{{ticketNumber}}\nGenerated: {{timestamp}}"
+  }
+}

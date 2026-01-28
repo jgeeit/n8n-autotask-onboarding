@@ -1,0 +1,198 @@
+{
+  "contactFields": {
+    "firstName": {
+      "fieldName": "firstName",
+      "required": true,
+      "maxLength": 50,
+      "autotaskFieldId": "firstName"
+    },
+    "lastName": {
+      "fieldName": "lastName",
+      "required": true,
+      "maxLength": 50,
+      "autotaskFieldId": "lastName"
+    },
+    "emailAddress": {
+      "fieldName": "emailAddress",
+      "required": true,
+      "maxLength": 254,
+      "autotaskFieldId": "emailAddress"
+    },
+    "title": {
+      "fieldName": "title",
+      "required": false,
+      "maxLength": 50,
+      "autotaskFieldId": "title"
+    },
+    "companyID": {
+      "fieldName": "companyID",
+      "required": true,
+      "autotaskFieldId": "companyID",
+      "description": "The company/account this contact belongs to"
+    },
+    "isActive": {
+      "fieldName": "isActive",
+      "required": true,
+      "default": true,
+      "autotaskFieldId": "isActive"
+    },
+    "phone": {
+      "fieldName": "phone",
+      "required": false,
+      "maxLength": 25,
+      "autotaskFieldId": "phone"
+    },
+    "mobilePhone": {
+      "fieldName": "mobilePhone",
+      "required": false,
+      "maxLength": 25,
+      "autotaskFieldId": "mobilePhone"
+    }
+  },
+  "resourceFields": {
+    "firstName": {
+      "fieldName": "firstName",
+      "required": true,
+      "autotaskFieldId": "firstName"
+    },
+    "lastName": {
+      "fieldName": "lastName",
+      "required": true,
+      "autotaskFieldId": "lastName"
+    },
+    "email": {
+      "fieldName": "email",
+      "required": true,
+      "autotaskFieldId": "email"
+    },
+    "userName": {
+      "fieldName": "userName",
+      "required": true,
+      "autotaskFieldId": "userName"
+    },
+    "title": {
+      "fieldName": "title",
+      "required": false,
+      "autotaskFieldId": "title"
+    },
+    "active": {
+      "fieldName": "active",
+      "required": true,
+      "default": true,
+      "autotaskFieldId": "active"
+    },
+    "licenseType": {
+      "fieldName": "licenseType",
+      "required": true,
+      "autotaskFieldId": "licenseType",
+      "description": "1=Full, 2=Lite, 3=Contributor"
+    }
+  },
+  "ticketFields": {
+    "title": {
+      "fieldName": "title",
+      "required": true,
+      "maxLength": 255,
+      "autotaskFieldId": "title"
+    },
+    "description": {
+      "fieldName": "description",
+      "required": true,
+      "autotaskFieldId": "description"
+    },
+    "companyID": {
+      "fieldName": "companyID",
+      "required": true,
+      "autotaskFieldId": "companyID"
+    },
+    "status": {
+      "fieldName": "status",
+      "required": true,
+      "autotaskFieldId": "status",
+      "description": "1=New, 5=Assigned, 8=Complete"
+    },
+    "priority": {
+      "fieldName": "priority",
+      "required": true,
+      "autotaskFieldId": "priority",
+      "description": "1=Critical, 2=High, 3=Medium, 4=Low"
+    },
+    "queueID": {
+      "fieldName": "queueID",
+      "required": true,
+      "autotaskFieldId": "queueID",
+      "description": "Queue/Service Board ID"
+    },
+    "assignedResourceID": {
+      "fieldName": "assignedResourceID",
+      "required": false,
+      "autotaskFieldId": "assignedResourceID"
+    },
+    "dueDateTime": {
+      "fieldName": "dueDateTime",
+      "required": false,
+      "autotaskFieldId": "dueDateTime",
+      "format": "ISO8601"
+    }
+  },
+  "customFields": {
+    "onboarding": {
+      "startDate": "UDF_12345",
+      "department": "UDF_12346",
+      "manager": "UDF_12347",
+      "employeeType": "UDF_12348"
+    },
+    "offboarding": {
+      "terminationDate": "UDF_22345",
+      "terminationReason": "UDF_22346",
+      "exitInterviewCompleted": "UDF_22347"
+    }
+  },
+  "queueMappings": {
+    "onboarding": {
+      "queueName": "Onboarding",
+      "queueID": 12345,
+      "defaultPriority": 3
+    },
+    "offboarding": {
+      "queueName": "Offboarding",
+      "queueID": 12346,
+      "defaultPriority": 2
+    },
+    "general": {
+      "queueName": "General Queue",
+      "queueID": 12347,
+      "defaultPriority": 3
+    }
+  },
+  "statusMappings": {
+    "new": 1,
+    "assigned": 5,
+    "inProgress": 6,
+    "complete": 8,
+    "waiting": 11
+  },
+  "priorityMappings": {
+    "critical": 1,
+    "high": 2,
+    "medium": 3,
+    "low": 4
+  },
+  "licenseTypes": {
+    "full": 1,
+    "lite": 2,
+    "contributor": 3
+  },
+  "notificationSettings": {
+    "onboardingComplete": {
+      "notifyHR": true,
+      "notifyManager": true,
+      "notifyEmployee": true
+    },
+    "offboardingComplete": {
+      "notifyHR": true,
+      "notifyManager": true,
+      "notifySecurity": true
+    }
+  }
+}
